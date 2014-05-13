@@ -57,6 +57,20 @@ set hlsearch
 set t_Co=256
 colorscheme molokai
 
+filetype plugin on  
+autocmd FileType python set omnifunc=pythoncomplete#Complete  
+autocmd FileType javascrīpt set omnifunc=javascriptcomplete#CompleteJS  
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags  
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS  
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags  
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP  
+autocmd FileType c set omnifunc=ccomplete#Complete  
+   
+""""""""""""""""""""""""""""""
+" pydiction
+""""""""""""""""""""""""""""""
+let g:pydiction_location='~/.vim/tools/pydiction/complete-dict' 
+
 """"""""""""""""""""""""""""""
 " F7 NERDTree
 """"""""""""""""""""""""""""""
